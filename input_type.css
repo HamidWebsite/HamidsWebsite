@@ -1,0 +1,64 @@
+input[type=text],
+select {
+    width: 50%;
+    display: inline-block;
+    border: 3px solid orange;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px orange;
+}
+input[type=email],
+select {
+    width: 50%;
+    display: inline-block;
+    border: 3px solid orange;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px orange;
+}
+textarea[id=content],
+select {
+    width: 50%;
+    display: inline-block;
+    border: 3px solid orange;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px orange;
+}
+
+
+.box_contact_me {
+    width: 500px;
+    height: fit-content;
+    min-height: 400px;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0 0 50px white;
+    align-items: center;
+    font-size: 15px;
+    color: orange;
+    text-align: center;
+    border: 2% solid orange;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1040px) {
+    .box_contact_me {
+        width: 300px;
+        height: fit-content;
+        min-height: 400px;
+        background-color: black;
+        border-radius: 50px;
+        box-shadow: 0 0 50px white;
+        align-items: center;
+        font-size: 15px;
+        color: orange;
+        text-align: center;
+        border: 2% solid orange;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

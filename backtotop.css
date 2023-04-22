@@ -1,0 +1,17 @@
+.top {
+    place-self: end;
+    position: sticky;
+    margin-top: 100vh;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: white;
+    background: orange;
+    border-radius: 100px;
+    box-shadow: 0 0 50px white;
+}

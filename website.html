@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hamid Nassehi Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-slace = 1.0">
+	<link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="bubble.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="input_type.css">
+    <link rel="stylesheet" href="backtotop.css">
+
+	<link rel="icon" type="image/png" href="HN.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header class = "header">
+        <a href="#" class="Logo">
+        <img src="HN.png" width="70" alt="Avatar">
+         </a> 
+        <nav class = "navbar">
+            <a href="#home" >Home</a>
+            <a href="#About" >About</a>
+            <a href="#Experience" >Experiences</a>
+            <a href="#Skills">Skills & Education</a>
+            <a href="#Contact" >Contact Me</a>
+        </nav>
+    </header>
+
+<!-- creating Home--> 
+<section class = "home" id = "home">
+    <div class="home-detail">
+                <div class="bubble x2">
+                </div>
+        <h3>👋🏽 Hello<span class = "orange"> <span class ="changing_word"></span></span><br> It's nice to meet you.</h3>
+        <h1>I'm Hamid Nassehi</h1>
+        <p>and I'm a <span class = "orange">Software Developer</span>.</p>
+        <br>
+        <br>
+                    <div class="social-links">
+                        <a href="https://github.com/hamidnassehi" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/hamidnassehi_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <br>
+            <a href="Hamids Resume.zip" class="glow-on-hover">Download CV</a>
+    </div>
+        <div class="bubble x1">
+        </div>
+        <div class="image-container">
+        <img src="profile_pic.png" alt="Your Image" class="circular-image">
+    </div>
+</section>
+
+<!-- creating About Me-->
+<section class="About" id="About">
+<div class="image-text-container">
+        <img src="hamid.JPG" alt="Your Image" class="image">
+        <div class="text">
+            <div class = "about-me-h2">About Me</div>
+            <div class = "about-me-p">
+I am currently a senior at the <span class="orange"> University of Maryland, College Park </span> studying to receive 
+my Bachelors Degree in Computer Science with a foundation in programming, web development,
+and algorithms seeking a challenging role in <span class = "orange">web and app development</span>.
+Highly motivated to apply technical expertise and collaborate with a team to deliver
+innovative solutions that drive business success.</p> </div>
+    </div>
+</div>
+</section>
+
+<!-- Creating Experiences-->
+<section class="Experience" id="Experience">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="pandaprogrammer.png" style="width:100%" text-align=center>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="IDCA.webp" style="width:100%" text-align=center>
+        </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+    
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <p style="font-size: 15px; color: orange;">Software Developer Intern at International Data Center Authority (IDCA)</p>
+                <p style="font-size: 10px; color: white;">April 2023 - Currently</p>
+                <br>
+                <ul>
+                    <p style="font-size: 12px; color: white;"><li>Collaborating closely with development teams to construct high-quality software solutions</li>
+                    <li>Writing, testing, and debugging code to ensure optimal functionality and reliability of software
+                        products</li>
+                    <li>Proficiency in popular programming languages such as React</li>
+                    <li>Strong analytical and problem-solving skills, with the ability to apply critical thinking to complex
+                        issues</li>
+                    <li>Contributed to the development of technical documentation for software applications</li>
+                    <li>Participated in team meetings and provided status updates on assigned tasks</li></p>
+                </ul>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <p style="font-size: 15px; color: orange;">Leader Teacher & PSS role at Panda Programmer</p>
+                <p style="font-size: 12px; color: white;">November 2021 - Currently</p>
+                <br>
+                <ul>
+                <p style="font-size: 12px; color: white;">  <li>Instructed 150+ students, instructing Python or chosen language</li>
+                    <li>Composed engaging lesson plans, allowing 150+ students to further their understanding of complex
+                        material</li>
+                    <li>Documented student growth, material mastery, and engagement in sharing information with students
+                        and/or parents and
+                        teachers to improve the effectiveness</li>
+                    <li>Developing influential relations with individuals to help the company expand and promote</li>
+                    <li>Managing new languages being presented to students at an understandable rate</li></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Skill Section-->
+<section class="Skills" id="Skills">
+    <body>
+        <br> <br><br>
+        <div class="container_box">
+            <div class="box_contact">
+                <div class = "box_title_contact">
+                    Skills
+                </div>
+                <ul>
+                    <li>HTML/ CSS/ JavaScript</li> <br>
+                    <li>React </li> <br>
+                    <li>SwiftUI</li> <br>
+                    <li>Java</li> <br>
+                    <li>C++</li> <br>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class ="box_contact">
+                <div class ="box_title_contact">
+                    Education
+                </div>
+                <ul>
+                    <li>University of Maryland</li> <br>
+                    <li>Graduating in Spring 2023</li> <br>
+                    <li>Bachelor of Computer Science</li> <br>
+                    <li>Concentration in Astronomy</li> <br>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</section>
+
+
+<!--Contact Section-->
+<section class="Contact" id="Contact">
+    <br> <br> <br> <br>
+    <form action="" id="contactForm">
+    <div class="box_contact_me">
+        <br>
+            <div class="alert">
+                Your Message Has Been Sent!
+            </div>
+        <div class = "box_title_contact">
+            Contact Me 
+        </div> <br>
+Name:
+<input type = "text" id="Name" required> 
+Email Address:
+<input type = "email" id="Email" required> 
+Phone Number:
+<input type = "text" id="number"> 
+How can I help?
+<textarea id="content" cols = "30" rows = "10" required></textarea> 
+<button class="glow-on-hover" type="submit">Submit</button> <br>
+    </div>
+    </form>
+</section>
+    <a href="#home" class="top">Back to Top &#8593;</a>
+
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="website.js"></script>
+<script src="mail.js"></script>
+<br><br><br><br><br><br><br><br>
+<div id="footer">
+    <hr>
+
+    <a href="#home" class="home">Home</a> &nbsp&nbsp
+    <a href="#About" class="home">About</a> &nbsp&nbsp
+    <a href="#Experience" class="home">Experiences</a> &nbsp&nbsp
+    <a href="#Skills" class="home">Skills & Education</a> &nbsp&nbsp
+    <a href="#Contact" class="home">Contact Me</a>
+    <div class="social-links-footer">
+        <a href="https://github.com/hamidnassehi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/hamidnassehi_/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Copyright &#169 2023 Hamid Nassehi</p>  <p>All rights reserved</p>
+</div>
+</body>
